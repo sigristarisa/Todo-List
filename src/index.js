@@ -1,1 +1,3 @@
-console.log("Hello from the console");
+import Home from "./components/Home";
+
+Home();
