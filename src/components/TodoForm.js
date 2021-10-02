@@ -1,7 +1,7 @@
 const TodoForm = () => {
   // create the form for the todos
   const todoForm = document.createElement("form");
-  body.appendChild(todoForm);
+  todoForm.id = "todoForm";
 
   // create a container for the inputs
   const todoInputContainer = document.createElement("div");
@@ -34,7 +34,10 @@ const TodoForm = () => {
 
   // create the submit button
   const submitButton = document.createElement("button");
+  submitButton.id = "submitButton";
   submitButton.innerText = "Submit";
+
+  submitButton.addEventListener("click", submitTodo);
 
   todoInputContainer.appendChild(priority);
   todoInputContainer.appendChild(submitButton);
@@ -43,4 +46,7 @@ const TodoForm = () => {
   return todoForm;
 };
 
+const submitTodo = (e) => {
+  e.preventDefault();
+};
 export default TodoForm;
