@@ -15,7 +15,6 @@ body {
 #body {
   width: 100vw;
   height: 100vh;
-  border: 2px solid blue;
 
   header {
     width: 100%;
@@ -26,10 +25,47 @@ body {
     justify-content: center;
 
     #headerTitle {
+      font-size: 48px;
       font-family: "Righteous", cursive;
       color: $dark-pink;
       margin: 20px;
       padding: 0;
+    }
+  }
+
+  main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+
+    nav {
+      width: 20%;
+      border: 2px red solid;
+    }
+    #todoContainer {
+      width: 80%;
+      border: 2px blue solid;
+
+      #todoTitle {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        margin: 20px;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 5%;
+    background-color: $pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #copyright {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
     }
   }
 }
